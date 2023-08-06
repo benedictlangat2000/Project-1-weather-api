@@ -2,7 +2,7 @@
 
 The Weather App is a simple web application that allows users to get weather information for different cities. Users can search for a city, and the application will display the current weather conditions for that city, including temperature, humidity, wind speed, and weather description. The weather app also has a table where one can make a report.
 
-![Weather App Screenshot](weather-app-screenshot.png)
+![Weather App Screenshot](weather-app-screenshot (10).png)
 
 ## Table of Contents
 
