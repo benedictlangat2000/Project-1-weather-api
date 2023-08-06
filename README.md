@@ -17,7 +17,7 @@ The Weather App is a simple web application that allows users to get weather inf
 
 ## Getting Started
 sample image of the webpage
-![Screenshot](\\wsl.localhost\Ubuntu\home\emmanuel\Development\Project-1-weather-api\images\Screenshot.png)
+![Screenshot](images\Screenshot.png)
 ### Prerequisites
 
 To run the Weather App locally, you'll need the following installed on your system:
