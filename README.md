@@ -16,7 +16,8 @@ The Weather App is a simple web application that allows users to get weather inf
 - [License](#license)
 
 ## Getting Started
-
+sample image of the webpage
+![Screenshot]{\images\Screenshot.png}
 ### Prerequisites
 
 To run the Weather App locally, you'll need the following installed on your system:
