@@ -8,24 +8,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+     <!-- Display the current time -->
     <div class="date-container">
         <div class="time" id="time">
             12:00 <span id="am-pm">PM</span>
 
         </div>
     </div>
+      <!-- Display the current date -->
     <div class="date" id="date">
         Wednesday, 2 August
     </div>
+        <!-- Weather Card -->
     <div class="card">
+         <!-- Search Bar -->
        <div class="search">
             <input type="text" placeholder="enter city name"
             spellcheck="false">
             <button type="search"> <img src="images/search.png" alt=""></button>  
         </div> 
+          <!-- Error Message (Hidden by default) -->
          <div class="error">
             <p>Invalid city name<AiOutlineSearch /></p>
          </div>
+              <!-- Weather Details (Hidden by default) -->
         <div class="weather">
             <img src="images/rain.png" class="weather-icon">
             <h1 class="temp">25°C</h1>
@@ -50,49 +56,64 @@
         </div>
 
     </div>
+        <!-- Weather Data Table -->
     <h1>Weather Data Table</h1>
     <table>
-        <tr>    
+    <table id="WeatherTable">
+        
+        <tr>
+        
+        <tbody>
+        
            <td>
-                <form method="POST">
-                    <input type="text" name="Day" placeholder="Day">
-                    <input type="text" name="city" placeholder="City">
-                    <input type="number" name="temperature" placeholder="Temperature">
-                    <input type="text" name="time" placeholder="Time">
-                    <input type="text" name="humidity" placeholder="Humidity">
-                    <input type="text" name="Description" placeholder="Humidity">
-                    <button type="submit">Create</button>
-                </form>
-                
-                <form method="PATCH">
-                    <input type="text" name="Day" placeholder="Day">
-                    <input type="text" name="city" placeholder="City">
-                    <input type="number" name="temperature" placeholder="Temperature">
-                    <input type="text" name="time" placeholder="Time">
-                    <input type="text" name="humidity" placeholder="Humidity">
-                    <input type="text" name="Description" placeholder="Humidity">
-                    <button type="submit">Update</button>
+             <!-- Form to create a new weather data entry -->
+           
+                <form method="POST" >
+                    <input type="text" name="Day" id="Day"placeholder="Day">
+                    <input type="text" name="city" id="City" placeholder="City">
+                    <input type="number" name="temperature" id="Temperature" placeholder="Temperature">
+                    <input type="text" name="time" id="time" placeholder="Time">
+                    <input type="text" name="humidity" id="humidity" placeholder="Humidity">
+                    <input type="text" name="Wind-Speed" id="Wind-Speed" placeholder="Wind">
+                    <input type="text" name="Description" id="Description" placeholder="Description">
+                    <button type="submit" button id="Create">Create</button>
                 </form>
 
+                 <!-- Form to update an existing weather data entry -->
+    
+                 <form method="PATCH">
+                    <input type="text" name="Day" placeholder="Day">
+                    <input type="text" name="city" placeholder="City">
+                    <input type="number" name="temperature" placeholder="Temperature">
+                    <input type="text" name="time" placeholder="Time">
+                    <input type="text" name="humidity" placeholder="Humidity">
+                    <input type="text" name="Wind-Speed" placeholder="Wind">
+                    <input type="text" name="Description" placeholder="Description">
+                    <button type="submit">Update</button>
+                </form>
+                     <!-- Form to get weather data by specific criteria -->
+                
                 <form method="GET">
                     <input type="number" name="Day" placeholder="Day">
                     <input type="text" name="city" placeholder="City">
                     <input type="number" name="temperature" placeholder="Temperature">
                     <input type="text" name="time" placeholder="Time">
                     <input type="text" name="humidity" placeholder="Humidity">
-                    <input type="text" name="Description" placeholder="Humidity">
+                    <input type="text" name="Wind-Speed" placeholder="Wind">
+                    <input type="text" name="Description" placeholder="Description">
                     <button type="submit">Get</button>
                 </form>
-
+                <!-- Form to delete weather data by city -->
+          
                 <form method="DELETE">
                     <input type="text" name="city" placeholder="City">
                     <button type="submit">Delete</button>
                 </form>
             </td>
         </tr>
-
-     
- 
+        </tbody>
+    </table>
+        
 
     <script src="script.js"></script>
 </body>

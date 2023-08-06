@@ -177,12 +177,28 @@ table {
     border-collapse: collapse;
     width: 100%;
 }
+tr{
+    font-size: large;
+    text-align: center;
+    align-items: center;
+    background-color: blueviolet;
 
-th, td {
+}
+th{
+    font-size: larger;
+    text-align: left;
+    align-items: center;
+    vertical-align: top;
+}
+
+ td {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
-    border-radius: 5px hsl(0, 91%, 39%);
+    border-radius: 5px hwb(168 4% 25%);
+    background-color: hsl(306, 91%, 39%);
+    color: white;
+    vertical-align: top;
 }
 
 tr:nth-child(even) {
@@ -198,13 +214,13 @@ form input, form button {
     margin-right: 5px;
 
 }
-
-form button {
+form button, #Create {
+    background-color: hwb(11 38% 1%);
+    font-size: larger;
     cursor: pointer;
-    background-color: #fff;
-    font-size: medium;
+   
 }
 
-#add-form, #update-form {
+#add-form, #update-form, #Create, #Delete {
     display: flex;
 }

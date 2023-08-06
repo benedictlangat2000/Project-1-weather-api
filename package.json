@@ -1,0 +1,12 @@
+{
+  "name": "project-1-weather-api",
+  "version": "1.0.0",
+  "description": "The Weather App is a simple web application that allows users to get weather information for different cities. Users can search for a city, and the application will display the current weather conditions for that city, including temperature, humidity, wind speed, and weather description.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Benedict",
+  "license": "ISC"
+}
